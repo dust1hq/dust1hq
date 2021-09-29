@@ -1,0 +1,69 @@
+WDK 7.1.0 download
+
+Debugview
+
+CPU - 링모드 
+
+RING 0  : 커널모드
+
+RING 3 : 유저모드
+
+
+EPROCESS
+
+KPROCESS (PCB)
+
+ETHREAD
+
+KTHREAD (TCB)
+
+PEB
+
+TEB
+
+슈퍼특권 : SetDebugPrivilege 등 --??
+
+SID : S-R-I-A[-A]
+
+SRM(Security Reference Monitor)
+
+psexec.exe -s -I -d 실행파일
+
+psgetsid.exe
+
+callback : PsSetCreateProcessNotifyRoutine 등 --??
+
+process monitor.py  
+
+pywin, wmi 설치
+
+dt _EPROCESS
+
+KDBG 구조체 , KPCR ???
+
+VAD : Vad, VadF, Vadl, VadS
+
+Dll의 세가지 이중 연결 리스트 : EPROCESS -> PEB ->Ldr ->_PEB_LDR_DATA
+
+
+windbg를 이용한 구조체 확인
+
+g
+
+r fs
+
+dg fs정보
+
+dt TEB구조체 
+
+dt PEB 구조체
+
+dt 주소 _PEB_LDR_DATA 
+
+dt 주소 _LIST_ENTRY -r
+
+dt _LIST_DATA_TABLE_ENTRY
+
+
+
+
