@@ -1,0 +1,52 @@
+autotimeliner : github 참고
+
+python3 autotimeline.py -f  [메모리덤프파일]
+
+-t 옵션을 추가하여 특정시간 확인 가능, -p 옵션으로 프로파일 설정 가능
+
+
+63번째 섹터는 VBR영역이고 다음 64 번째 섹터는 RRaA로 시작함.
+
+백업본으로 복구 ~~ ^^ (MS-DOS로 검색)
+
+defcon#21
+
+1.  irc  .... html decoder에서 디코딩하면 정답
+
+
+2. networkminer에서 messages 찾을수 있음. DCC SEND 형식으로 보면 유추 가능(1024포트로 통신).
+   wireshark에서 해당 포트에 대해서 사이즈 확인후 저장하면 됨.(DCC_SEND.tc)
+   TrueCrypt에서 불러오고 networkminer에서 찾은 비밀번호를 넣으면 정답
+
+3. export object의 mms메시지 확인(mp4) ... 해당 패킷을 저장하고 헤더부분을 날리면됨. (0000001866 ~로 시작)
+
+4. 좌표위치(경도/위도) 패킷을 확인 가능
+    networkminer에서 messages를 통해 찾을수 있음.  (kml로 저장할때 불필요한  \를 삭제)
+    kml viewer에서 확인 가능
+
+5. 안드로이드 덤프파일( png, jpg확인)  ... 확인하다보면 죽은 사람사진 확인됨.
+
+6. networkminer에서 Filles에서 html파일을 확인 (악성코드)
+
+7. 은행 계정 정보( export HTTP)  ... bankofamerica~.net을 확인 가능 (해당 사이트가 피싱사이트)
+
+8. RTP  ... Telephony에서 Stream Analysis를 통해 확인 가능 (Player에서 확인 Decode하여 Paly)  .... 범인은 빅토리아 ^^
+
+
+
+
+
+
+
+
+ 
+
+   
+
+
+    
+
+
+ 
+
+
